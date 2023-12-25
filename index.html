@@ -1,82 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>WP Pusher</title>
-</head>
-<body>
-        <nav class="navglobal">
-            <div>
-            <img src="./Assets/Image/wppusher-logo copy.png" alt="WP Pusher">
-            </div>
+  </head>
+  <body>
+    <section>
+      <nav class="navglobal">
+        <div>
+          <img src="./Assets/Image/wppusher-logocopy.png" alt="WP Pusher" />
+        </div>
 
-            <div>
-            <ul>
-                <li><a href="Download"> Download </a>
-                <li>
-        
-                <li><a href="Learn more"> Learn more </a>
-                </li>
-        
-               <li><a href="Pricing"> Pricing </a>
-                </li>
-        
-                <li><a href="Help"> Help </a>
-                </li>
-        
-                <li class="navbotton"><a href="Account"> Account </a>
-                </li>
-            </ul>
-            </div>
-        </nav>
+        <div>
+          <ul>
+            <li><a href="Download"> Download </a></li>
+
+            <li><a href="Learn more"> Learn more </a></li>
+
+            <li><a href="Pricing"> Pricing </a></li>
+
+            <li><a href="Help"> Help </a></li>
+
+            <li class="navbotton"><a href="Account"> Account </a></li>
+          </ul>
+        </div>
+      </nav>
     </section>
     <section>
-    <div class="container">
+      <div class="container">
         <div class="checkoutform">
-            <h2>Checkout</h2>
-            <form>
-                <div class="section">
-                    <h3>Your Basic Information</h3>
-                    <div class="flexdivs">
-                        <label>First Name</label>
-                        <input type="text" name="firstname" placeholder="First name"/>
-                    </div>
+          <h2>Checkout</h2>
+          <form>
+            <div class="section">
+              <h3>Your Basic Information</h3>
+              <div class="flexdivs">
+                <label>First Name</label>
+                <input type="text" name="firstname" placeholder="First name" />
+              </div>
 
-                    <div>
-                        <label>Last Name</label>
-                        <input type="text" name="lastname" placeholder="Last name"/>
-                    </div>
-                    
-                    <p>
-                        <label>Password</label><br />
-                        <input type="email" id="email" name="email" placeholder="janedoe@example.com">
-                    </p>
-                </div>
-                <div class="section">
-                    <h3>Your Payment Information</h3>
-                    <p>
-                        <label>Credit Card</label><br />
-                        <input type="number" id="number" name="number" placeholder="Card Number ">
-                    </p>
-                </div>
-                <button type="submit" value="register">Buy WP Pusher</button>
-            </form>
-            <footer>Need any help? Don’t hesitate to contact support!</footer>
+              <div>
+                <label>Last Name</label>
+                <input type="text" name="lastname" placeholder="Last name" />
+              </div>
+
+              <p>
+                <label>Password</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="janedoe@example.com"
+                />
+              </p>
+            </div>
+            <div class="section">
+              <h3>Your Payment Information</h3>
+              <p>
+                <label>Credit Card</label><br />
+                <input
+                  type="number"
+                  id="number"
+                  name="number"
+                  placeholder="Card Number "
+                />
+              </p>
+            </div>
+            <button type="submit" value="register">Buy WP Pusher</button>
+          </form>
+          <footer>Need any help? Don’t hesitate to contact support!</footer>
         </div>
 
         <div class="pricinginfo">
-            <img src="./Assets/Image/Plan.png" alt="Freelancer $99/year. Automatically renews after 1 year">
+          <h3>Freelancer</h3>
+          <div>
+            <div class="dollar">$</div>
+            <div class="ninetynine">
+              <span id="nine">99</span>
+              <span> / year</span>
+            </div>
+          </div>
+          <p class="text">Automatically renews after 1 year</p>
+
+          <ul>
+            <li>
+              <img src="./Assets/Image/CombinedShape.png" alt="Chekmark" />
+              <p>Use on <strong>5</strong> client sites</p>
+            </li>
+            <li>
+              <img src="./Assets/Image/CombinedShape.png" alt="Chekmark" />
+              <p>Private Repositories</p>
+            </li>
+            <li>
+              <img src="./Assets/Image/CombinedShape.png" alt="Chekmark" />
+              <p>Email Support</p>
+            </li>
+          </ul>
+          <div class="need">
+            <p>Need <strong>20</strong> clients</p>
+
+            <a href="#" Switch to the agency plan></a>
+          </div>
+
+          <div class="ftp">
+            <p>
+              FTP is horrible to deal with. <strong>WP Pusher</strong> solves
+              that issue, and the customer support is awesome!
+            </p>
+          </div>
+          <div class="kirk">
+            <img src="./Assets/Image/KirksHead.png" alt="" />
+            <p>
+              <strong>Kirk Beard</strong>
+            </p>
+          </div>
+          <!-- <img src="./Assets/Image/Plan.png" alt="Freelancer $99/year. Automatically renews after 1 year">
 
             <img src="./Assets/Image/Details.png" alt="">
 
             <img src="./Assets/Image/Switch.png" alt="Need 20 client sites? Switch to the Agency plan.">
 
-            <img src="./Assets/Image/Quote.png" alt="FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is awesome!">
+            <img src="./Assets/Image/Quote.png" alt="FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is awesome!"> -->
         </div>
-
-    </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
