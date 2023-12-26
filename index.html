@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>WP Pusher</title>
   </head>
@@ -23,7 +29,7 @@
 
             <li><a href="Help"> Help </a></li>
 
-            <li class="navbotton"><a href="Account"> Account </a></li>
+            <li class="navbotton">Account</li>
           </ul>
         </div>
       </nav>
@@ -34,19 +40,24 @@
           <h2>Checkout</h2>
           <form>
             <div class="section">
-              <h3>Your Basic Information</h3>
+              <div class="num1">
+                <p>1</p>
+                <h3>Your Basic Information</h3>
+              </div>
               <div class="flexdivs">
-                <label>First Name</label>
-                <input type="text" name="firstname" placeholder="First name" />
+                <div class="name">
+                  <label>First Name</label>
+                  <input type="text" name="firstname" placeholder="Jane" />
+                </div>
+
+                <div class="name">
+                  <label>Last Name</label>
+                  <input type="text" name="lastname" placeholder="Doe" />
+                </div>
               </div>
 
-              <div>
-                <label>Last Name</label>
-                <input type="text" name="lastname" placeholder="Last name" />
-              </div>
-
-              <p>
-                <label>Password</label><br />
+              <p class="mail">
+                <label>Email</label><br />
                 <input
                   type="email"
                   id="email"
@@ -55,33 +66,61 @@
                 />
               </p>
             </div>
-            <div class="section">
-              <h3>Your Payment Information</h3>
+
+            <div class="lowerform">
+              <div class="sectiontwo">
+                <div class="num1">
+                  <p>2</p>
+                  <h3>Your Payment Information</h3>
+                </div>
+
+                <p>
+                  <label>Credit Card</label><br />
+                  <input
+                    type="number"
+                    id="number"
+                    name="number"
+                    placeholder="Card Number "
+                  />
+                </p>
+              </div>
+
+              <div>
+                <button type="submit" value="register">Buy WP Pusher</button>
+              </div>
+            </div>
+          </form>
+
+          <footer>
+            <div class="footer">
+              <img src="./Assets/Image/Mask.png" alt="Questionmark" />
+
               <p>
-                <label>Credit Card</label><br />
-                <input
-                  type="number"
-                  id="number"
-                  name="number"
-                  placeholder="Card Number "
-                />
+                <strong>Need any help?</strong> Don’t hesitate to contact
+                support!
               </p>
             </div>
-            <button type="submit" value="register">Buy WP Pusher</button>
-          </form>
-          <footer>Need any help? Don’t hesitate to contact support!</footer>
+
+            <div class="stripe">
+              <img src="./Assets/Image/powered_by_stripe.png" alt="stripe" />
+            </div>
+          </footer>
         </div>
 
         <div class="pricinginfo">
           <h3>Freelancer</h3>
-          <div>
+
+          <div class="price">
             <div class="dollar">$</div>
             <div class="ninetynine">
               <span id="nine">99</span>
-              <span> / year</span>
+              <span id="year"> / year</span>
             </div>
           </div>
-          <p class="text">Automatically renews after 1 year</p>
+          <p class="text">
+            Automatically renews <br />
+            after 1 year
+          </p>
 
           <ul>
             <li>
@@ -100,7 +139,7 @@
           <div class="need">
             <p>Need <strong>20</strong> clients</p>
 
-            <a href="#" Switch to the agency plan></a>
+            <a href="#">Switch to the agency plan.</a>
           </div>
 
           <div class="ftp">
@@ -108,22 +147,20 @@
               FTP is horrible to deal with. <strong>WP Pusher</strong> solves
               that issue, and the customer support is awesome!
             </p>
+
+            <div class="kirk">
+              <img src="./Assets/Image/KirksHead.png" alt="" />
+              <p>
+                <strong>Kirk Beard</strong>
+              </p>
+            </div>
           </div>
-          <div class="kirk">
-            <img src="./Assets/Image/KirksHead.png" alt="" />
-            <p>
-              <strong>Kirk Beard</strong>
-            </p>
-          </div>
-          <!-- <img src="./Assets/Image/Plan.png" alt="Freelancer $99/year. Automatically renews after 1 year">
-
-            <img src="./Assets/Image/Details.png" alt="">
-
-            <img src="./Assets/Image/Switch.png" alt="Need 20 client sites? Switch to the Agency plan.">
-
-            <img src="./Assets/Image/Quote.png" alt="FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is awesome!"> -->
         </div>
       </div>
+      <p class="finalfooter">
+        &copy; 2018 WP Pusher IVS <span>·</span>
+        <a href="#">Terms of Service</a>
+      </p>
     </section>
   </body>
 </html>
